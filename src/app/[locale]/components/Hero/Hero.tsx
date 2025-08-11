@@ -151,7 +151,7 @@ export const Hero: React.FC = () => {
   ];
 
   return (
-     <section className=' bg-black text-white pt-16 sm:pt-20 md:pt-24 pb-8 sm:pb-12 relative overflow-hidden mb-25'>
+     <section className=' bg-black text-white pt-16  relative overflow-hidden'>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8 relative z-10'>
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-start'>
           {/* Left Side */}

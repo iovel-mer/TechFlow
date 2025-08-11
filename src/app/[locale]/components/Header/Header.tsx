@@ -14,7 +14,7 @@ export const Header: React.FC = () => {
   const locale = useLocale();
 
   return (
-    <header className="bg-black sticky top-0 z-50 ">
+    <header className="bg-black sticky top-0 z-50 border-b border-gray-400 ">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo and Brand */}
@@ -37,13 +37,13 @@ export const Header: React.FC = () => {
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-3">
             <Link href="/login">
-              <button className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-slate-700 to-slate-600 text-white hover:from-slate-600 hover:to-slate-500 transition-all duration-200 shadow-lg hover:shadow-xl border border-slate-600 hover:border-slate-500">
+              <button className="flex cursor-pointer items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-slate-700 to-slate-600 text-white hover:from-slate-600 hover:to-slate-500 transition-all duration-200 shadow-lg hover:shadow-xl border border-slate-600 hover:border-slate-500">
                 <LogIn size={16} />
                 {t("signIn")}
               </button>
             </Link>
             <Link href="/register">
-              <button className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-500 hover:to-teal-500 transition-all duration-200 shadow-lg hover:shadow-xl hover:shadow-emerald-500/25">
+              <button className="flex cursor-pointer items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-500 hover:to-teal-500 transition-all duration-200 shadow-lg hover:shadow-xl hover:shadow-emerald-500/25">
                 <UserPlus size={16} />
                 {t("getStarted")}
               </button>

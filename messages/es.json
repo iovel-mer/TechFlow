@@ -143,6 +143,7 @@
 },
 
   "security": {
+    "backToHome": "Volver al inicio",
     "title": "Tu Seguridad, Nuestra Prioridad",
     "subtitle": "Proteger tus activos y datos es nuestra principal misión...",
     "assetProtection": {

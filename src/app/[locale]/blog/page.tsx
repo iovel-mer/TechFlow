@@ -12,7 +12,7 @@ export default function BlogPage() {
   return (
     <>
     <Header/>
-      <main className="min-h-screen max-w-7xl mx-auto bg-black text-white py-12">
+      <main className="container mx-auto bg-black text-white pt-30">
            <Link
   href={`/${locale}`}
   className=" ml-15
@@ -30,7 +30,7 @@ export default function BlogPage() {
   <ArrowLeft size={18} />
   <span>{t('backToHome')}</span>
 </Link>
-        <div className="max-w-4xl mx-auto px-4 py-8">
+        <div className="max-w-4xl mx-auto px-4 ">
           <div className="mb-20 ">
           </div>
           <article className="bg-black rounded-lg shadow-lg overflow-hidden">

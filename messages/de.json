@@ -159,6 +159,7 @@
   }
 },
   "security": {
+    "backToHome": "Zurück zur Startseite",
     "title": "Ihre Sicherheit, Unsere Priorität",
     "subtitle": "Der Schutz Ihrer Vermögenswerte steht im Mittelpunkt...",
     "assetProtection": {

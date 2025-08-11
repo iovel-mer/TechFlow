@@ -28,7 +28,7 @@ export default function SecurityPage() {
   return (
     <>
       <Header/>
-      <main className='bg-black text-white mt-10 pt-5'>
+      <main className='bg-black text-white  pt-20'>
         {/* Hero Section */}
         <section className='container mx-auto text-center mb-16 px-4 md:px-6'>
            <div className="mb-20 text-left ml-10">
@@ -43,8 +43,6 @@ export default function SecurityPage() {
     px-4 py-2
     text-sm font-medium
     transition
-   
-    focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2
     shadow-sm
   "
 >

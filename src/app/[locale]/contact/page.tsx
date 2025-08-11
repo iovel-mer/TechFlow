@@ -65,7 +65,7 @@ export default function ContactPage() {
   return (
     <>
       <Header />
-      <div className='container mx-auto px-4 py-12 md:py-20 bg-black text-white'>
+      <div className='container mx-auto pt-20  bg-black text-white'>
         <div className='mb-20 text-left ml-10'>
           <Link
             href={`/${locale}`}

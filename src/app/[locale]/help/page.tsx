@@ -37,7 +37,7 @@ export default function HelpPage() {
   return (
     <>
     <Header/>
-      <main className='bg-black max-w-7xl mx-auto  text-white py-16'>
+      <main className='bg-black container  mx-auto px-4  text-white py-16'>
          
            <Link
   href={`/${locale}`}
@@ -51,6 +51,7 @@ export default function HelpPage() {
     text-sm font-medium
     transition
     shadow-sm
+    ml-8
   "
 >
   <ArrowLeft size={18} />

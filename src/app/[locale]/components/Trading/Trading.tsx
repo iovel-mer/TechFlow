@@ -7,7 +7,7 @@ import Link from "next/link"
 export const Trading: React.FC = () => {
   const t = useTranslations("Trading")
   return (
-    <section className="py-20 md:py-24 lg:py-32 bg-black text-white relative overflow-hidden">
+    <section className=" py-50 bg-black text-white relative overflow-hidden">
       {/* Subtle background pattern for depth */}
       <div
         className="absolute inset-0 z-0 opacity-10"
@@ -94,7 +94,7 @@ export const Trading: React.FC = () => {
                 {t("cta")}
                 <ArrowRight className="inline ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </span>
-              <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <span className="absolute cursor-pointer inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             </button>
           </Link>
         </div>

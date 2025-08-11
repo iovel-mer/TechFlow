@@ -14,7 +14,7 @@ export default function DocumentationPage() {
     <>
       <Header />
 
-      <div className="min-h-screen max-w-7xl mx-auto pt-15 flex bg-black px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto pt-20 flex bg-black px-4 sm:px-6 lg:px-8">
         <main className="flex-1 my-8">
           <div className="mb-25">
             <Link
