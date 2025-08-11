@@ -1,0 +1,932 @@
+{
+  "Header": {
+    "signIn": "Iniciar sesión",
+  "getStarted": "Comenzar",
+  "subtitle": "Centro de Innovación",
+   "mobileSignIn": "Iniciar sesión",
+  "mobileGetStarted": "Comenzar",
+  "openMenu": "Abrir menú",
+  "closeMenu": "Cerrar menú",
+  "trade": "Comerciar",
+  "markets": "Mercados",
+  "portfolio": "Portafolio",
+  "learn": "Aprender",
+  "about": "Acerca de"
+  },
+"Hero": {
+    "status": "Estado del sistema: Operativo",
+    "nextGen": "De próxima generación",
+    "trading": "Comercio",
+    "platform": "Plataforma",
+    "latency": "Latencia",
+    "uptime": "Tiempo de actividad",
+    "description": "Disfruta de un comercio de criptomonedas rápido, seguro y escalable con datos de mercado en tiempo real y un rendimiento inigualable.",
+    "dailyVolume": "Volumen diario",
+    "activeUsers": "Usuarios activos",
+    "successRate": "Tasa de éxito",
+    "liveMarket": "Mercado en vivo",
+    "live": "EN VIVO",
+    "volume24h": "Volumen 24h",
+    "marketCap": "Capitalización de mercado"
+  }
+,
+
+   "Trading": {
+    "badge": "Características clave",
+    "title": "Diseñado para",
+    "highlight": "Rendimiento",
+    "description": "Infraestructura de nivel empresarial con diseño intuitivo. Cada función optimizada para máxima eficiencia.",
+    "features": {
+      "analytics": {
+        "title": "Análisis en Tiempo Real",
+        "desc": "Gráficos avanzados, indicadores técnicos e inteligencia de mercado con IA para tomar decisiones informadas."
+      },
+      "security": {
+        "title": "Seguridad Bancaria",
+        "desc": "Seguridad en múltiples capas con almacenamiento en frío, 2FA y cobertura de seguro para proteger tus activos."
+      },
+      "fast": {
+        "title": "Ultrarrápido",
+        "desc": "Opera en milisegundos con nuestro motor de emparejamiento de alto rendimiento e infraestructura global."
+      },
+      "fees": {
+        "title": "Bajas Comisiones",
+        "desc": "Tarifas competitivas desde el 0.1% con descuentos por volumen y reembolsos maker-taker."
+      },
+      "support": {
+        "title": "Soporte 24/7",
+        "desc": "Atención al cliente 24/7 vía chat en vivo, correo y gerentes de cuenta dedicados."
+      },
+      "global": {
+        "title": "Acceso Global",
+        "desc": "Opera desde cualquier parte del mundo con nuestra app móvil y web multilingüe."
+      }
+    },
+    "cta": "Explorar Todas las Funciones"
+  },
+  "Market": {
+    "badge": "Datos de mercado en vivo",
+    "title": "Información del mercado en tiempo real",
+    "description": "Mantente al tanto con precios de criptomonedas y movimientos del mercado actualizados cada 15 segundos.",
+    "loading": "Cargando datos de mercado...",
+    "errorFetch": "Error al cargar los datos del mercado",
+    "errorGeneric": "No se pudo cargar la información",
+    "currentPrice": "Precio actual",
+    "movement": "Movimiento del precio"
+  },
+   "footer": {
+    "description": "TechFlow es la plataforma de comercio de criptomonedas más confiable, que ofrece herramientas avanzadas y seguridad de primer nivel. Nuestra misión es crear la mejor experiencia de trading y brindar a nuestros clientes la libertad de operar sin limitaciones.",
+    "company_info": "TechFlow es el nombre comercial de Raw Trading Ltd, que está regulado por la Autoridad de Servicios Financieros de Seychelles (FSA) con el número de licencia de corredor de valores SD016.",
+    "risk_warning": "Advertencia de riesgo: Operar con Forex y CFDs implica un alto nivel de riesgo para su capital y solo debe operar con dinero que pueda permitirse perder. Operar con Forex y CFDs puede no ser adecuado para todos los inversores.",
+    "execution_notice": "La ejecución de operaciones, los precios, la velocidad y el acceso a la cuenta pueden verse afectados por diversos factores como la volatilidad del mercado, el tamaño y tipo de orden, el volumen de operaciones y el rendimiento del sistema. Durante períodos de alta actividad del mercado o disponibilidad limitada del sistema, pueden producirse retrasos en el acceso a la cuenta y la ejecución de operaciones. Los inversores deben ser conscientes de estos riesgos y planificar en consecuencia.",
+    "age_restriction": "Debe tener al menos 18 años, o la edad legal determinada en su país.",
+    "company": "Empresa",
+    "support": "Soporte",
+    "blog": "Blog",
+    "resources": "Recursos",
+    "documentation": "Documentación",
+    "aboutUs": "Sobre Nosotros",
+    "security": "Seguridad",
+    "helpCenter": "Centro de Ayuda",
+    "contactUs": "Contáctanos",
+    "terms": {
+      "title": "Términos de Servicio",
+      "content": "<h3 class=\"text-xl font-semibold mb-4 text-white\">1. Aceptación de los Términos</h3><p class=\"mb-4\">Al acceder y utilizar TechFlow, aceptas los términos...</p>..."
+    },
+    "privacy": {
+      "title": "Política de Privacidad",
+      "content": "<h3 class=\"text-xl font-semibold mb-4 text-white\">1. Información que Recopilamos</h3><p class=\"mb-4\">Recopilamos la información que nos proporcionas directamente...</p>..."
+    },
+    "cookies": {
+      "title": "Política de Cookies",
+      "content": "<h3 class=\"text-xl font-semibold mb-4 text-white\">1. ¿Qué son las cookies?</h3><p class=\"mb-4\">Las cookies son pequeños archivos de texto que se almacenan...</p>..."
+    },
+    "legal": {
+      "terms": "Términos de Servicio",
+      "privacy": "Política de Privacidad",
+      "cookies": "Política de Cookies"
+    },
+    "rights": "Todos los derechos reservados.",
+    "close": "Cerrar"
+  },
+  "about":{
+  "title": "Descubre Nuestra Historia",
+  "backToHome": "Volver al inicio",
+  "description": "Estamos dedicados a empoderar a individuos y empresas con soluciones innovadoras y soporte incomparable.",
+  "vision": {
+    "title": "Nuestra Visión",
+    "description": "Crear un mundo donde la tecnología se integre perfectamente con la vida diaria, fomentando la innovación y simplificando procesos complejos para todos."
+  },
+  "established": {
+    "title": "Fundada en 2020",
+    "description": "Fundada por un equipo diverso de expertos apasionados por la tecnología y su potencial para transformar industrias y mejorar experiencias de usuario."
+  },
+  "community": {
+    "title": "Impacto en la Comunidad",
+    "description": "Comprometidos con retribuir, apoyamos activamente iniciativas educativas y proyectos de código abierto para nutrir a la próxima generación de innovadores."
+  },
+  "principles": {
+    "title": "Nuestros Principios Fundamentales",
+    "integrity": {
+      "title": "Integridad",
+      "description": "Mantener los más altos estándares de honestidad y conducta ética en todos nuestros esfuerzos."
+    },
+    "excellence": {
+      "title": "Excelencia",
+      "description": "Buscar calidad superior y mejora continua en cada solución que entregamos."
+    },
+    "collaboration": {
+      "title": "Colaboración",
+      "description": "Fomentar una cultura de trabajo en equipo y éxito compartido, tanto interna como externamente."
+    }
+  }
+},
+
+  "security": {
+    "title": "Tu Seguridad, Nuestra Prioridad",
+    "subtitle": "Proteger tus activos y datos es nuestra principal misión...",
+    "assetProtection": {
+      "title": "Protección de Activos",
+      "coldStorage": {
+        "title": "Almacenamiento en Frío",
+        "description": "Más del 95% de los activos están fuera de línea..."
+      },
+      "insurance": {
+        "title": "Cobertura de Seguro",
+        "description": "Póliza integral contra riesgos digitales."
+      },
+      "accounts": {
+        "title": "Cuentas Separadas",
+        "description": "Fondos de clientes en cuentas reguladas."
+      }
+    },
+    "technical": {
+      "title": "Seguridad Técnica",
+      "multiSig": {
+        "title": "Carteras Multi-Firma",
+        "description": "Se requieren varias claves para transacciones."
+      },
+      "encryption": {
+        "title": "Cifrado de Extremo a Extremo",
+        "description": "Datos cifrados usando AES-256."
+      },
+      "monitoring": {
+        "title": "Monitoreo 24/7",
+        "description": "Detección de amenazas en tiempo real."
+      }
+    },
+    "compliance": {
+      "title": "Cumplimiento Regulatorio",
+      "regulatory": {
+        "title": "Cumplimiento Global",
+        "description": "Operamos bajo supervisión regulatoria."
+      },
+      "audits": {
+        "title": "Auditorías Regulares",
+        "description": "Auditorías de seguridad trimestrales."
+      },
+      "transparency": {
+        "title": "Transparencia",
+        "description": "Informes de auditoría disponibles."
+      }
+    },
+    "tips": {
+      "title": "Mejora la Seguridad de tu Cuenta",
+      "list": [
+        "Activa la autenticación en dos pasos.",
+        "Usa una contraseña única y segura.",
+        "No compartas tus credenciales.",
+        "Revisa tu actividad con frecuencia.",
+        "Informa actividad sospechosa."
+      ]
+    },
+    "note": "Nuestro compromiso con la seguridad es inquebrantable..."
+  },
+  "help": {
+    "back": "Volver al inicio",
+    "hero": {
+      "title": "Tu Centro de Productividad",
+      "description": "Optimiza tu flujo de trabajo, gestiona tareas de forma eficiente y alcanza tus metas con nuestras herramientas y recursos."
+    },
+    "actions": {
+      "title": "Acciones Rápidas",
+      "task": {
+        "title": "Agregar Nueva Tarea",
+        "description": "Agrega una nueva tarea a tu lista rápidamente",
+        "button": "Crear Tarea"
+      },
+      "projects": {
+        "title": "Ver Todos los Proyectos",
+        "description": "Organiza y gestiona todos tus proyectos en curso.",
+        "button": "Ver Proyectos"
+      },
+      "progress": {
+        "title": "Seguimiento del Progreso",
+        "description": "Monitorea tus logros y tendencias de productividad.",
+        "button": "Ver Analíticas"
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": {
+        "question": "¿Cómo configuro metas diarias?",
+        "answer": "Puedes configurar metas diarias desde la sección 'Metas' en tu panel."
+      },
+      "q2": {
+        "question": "¿Cuál es la mejor manera de priorizar tareas?",
+        "answer": "Recomendamos usar la Matriz de Eisenhower para categorizar las tareas por urgencia e importancia."
+      },
+      "q3": {
+        "question": "¿Puedo integrar con otras aplicaciones?",
+        "answer": "Sí, nuestra plataforma es compatible con Google Calendar, Slack, Trello, entre otros."
+      },
+      "q4": {
+        "question": "¿Cómo puedo mejorar mi enfoque?",
+        "answer": "Usa nuestro temporizador Pomodoro y modo sin distracciones para mantener la concentración."
+      }
+    },
+    "guides": {
+      "title": "Guías y Recursos",
+      "gettingStarted": {
+        "title": "Primeros Pasos",
+        "items": [
+          "Configuración y Registro de Cuenta",
+          "Tu Primera Tarea y Proyecto",
+          "Entendiendo el Panel de Control",
+          "Videos Tutoriales para Principiantes"
+        ]
+      },
+      "advanced": {
+        "title": "Productividad Avanzada",
+        "items": [
+          "Gestión Avanzada de Proyectos",
+          "Flujos de Trabajo y Automatización",
+          "Documentación para Desarrolladores",
+          "Mejores Prácticas de Colaboración en Equipo"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Desbloquea Tu Potencial",
+      "description": "¿Listo para mejorar tu productividad? Explora todas nuestras funciones o contacta con nuestro equipo de soporte.",
+      "explore": "Explorar Funciones",
+      "contact": "Contactar Soporte"
+    }
+  }
+,
+  "Contact": {
+    "backToHome": "Volver al inicio",
+    "getInTouch": "Ponte en contacto",
+    "introText": "¿Tienes alguna pregunta o necesitas ayuda? Estamos aquí para ayudarte. Contáctanos a través de los canales a continuación o completa el formulario.",
+
+    "generalInquiries": {
+      "title": "Consultas Generales",
+      "description": "Para preguntas generales sobre nuestros servicios y empresa.",
+      "hours": "Lunes a viernes, 9 AM – 5 PM EST"
+    },
+
+    "technicalSupport": {
+      "title": "Soporte Técnico",
+      "description": "Para problemas técnicos, ayuda con productos y solución de problemas.",
+      "hours": "Disponible 24/7"
+    },
+
+    "partnerships": {
+      "title": "Colaboraciones y Medios",
+      "description": "Para colaboraciones comerciales, consultas de prensa y solicitudes de medios.",
+      "hours": "Lunes a viernes, 10 AM – 4 PM EST"
+    },
+
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+
+    "form": {
+      "title": "Envíanos un mensaje",
+      "description": "Completa el formulario a continuación y te responderemos lo antes posible.",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre completo",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@correo.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "Selecciona un asunto",
+      "subjectOptions": {
+        "general": "Consulta General",
+        "technical": "Soporte Técnico",
+        "billing": "Pregunta de Facturación",
+        "partnership": "Oportunidad de Colaboración",
+        "other": "Otro"
+      },
+      "message": "Mensaje",
+      "messagePlaceholder": "¿Cómo podemos ayudarte?",
+      "sendButton": "Enviar mensaje"
+    },
+
+    "locations": {
+      "title": "Nuestras ubicaciones",
+      "newYork": {
+        "title": "Nueva York (HQ)",
+        "address1": "123 Tech Avenue",
+        "address2": "Nueva York, NY 10001",
+        "country": "Estados Unidos"
+      },
+      "london": {
+        "title": "Londres",
+        "address1": "45 Innovation Street",
+        "address2": "Londres EC1A 1BB",
+        "country": "Reino Unido"
+      },
+      "singapore": {
+        "title": "Singapur",
+        "address1": "78 Silicon Road",
+        "address2": "Singapur 018906",
+        "country": "Singapur"
+      }
+    },
+
+    "responseTimes": {
+      "title": "Tiempos de respuesta rápidos",
+      "description": "Nos esforzamos por responder a todas las consultas rápidamente.",
+      "liveChat": {
+        "label": "Chat en vivo",
+        "detail": "Respuesta inmediata durante el horario laboral (si está disponible)"
+      },
+      "emailSupport": {
+        "label": "Soporte por correo",
+        "detail": "Dentro de 4 horas para asuntos urgentes, 24 horas para consultas generales"
+      },
+      "phoneSupport": {
+        "label": "Soporte telefónico",
+        "detail": "Tiempo de espera mínimo durante el horario laboral"
+      },
+      "businessInquiries": {
+        "label": "Consultas comerciales",
+        "detail": "Dentro de 1 día hábil"
+      }
+    }
+  }
+,
+  "Blog": {
+    "backToHome": "Volver al inicio",
+    "category": {
+      "crypto": "Criptomoneda",
+      "investment": "Inversión"
+    },
+    "title": "El auge de los ETF de Bitcoin: un cambio de juego para los inversores minoristas",
+    "author": "Sarah Chen",
+    "date": "15 de enero de 2024",
+    "readTime": "8 minutos de lectura",
+    "intro": "La aprobación de los ETF de Bitcoin por la SEC...",
+    "section": {
+      "whatTitle": "¿Qué son los ETF de Bitcoin?",
+      "whatBody": "Los ETF de Bitcoin son fondos de inversión que rastrean...",
+      "benefitsTitle": "Beneficios clave para los inversores minoristas"
+    },
+    "quote": {
+      "text": "Los ETF de Bitcoin representan el puente entre las finanzas tradicionales y la revolución de los activos digitales.",
+      "author": "Michael Novogratz, CEO de Galaxy Digital"
+    }
+  }
+  ,
+  "Docs": {
+    "backToHome": "Volver al inicio",
+    "title": "Documentación de CryptoAPI",
+    "description": "Una API REST completa para datos del mercado de criptomonedas, gestión de billeteras e interacciones blockchain.",
+    "features": {
+      "easy": "Fácil de usar",
+      "easyDesc": "API REST simple con documentación y ejemplos completos.",
+      "realtime": "Datos en tiempo real",
+      "realtimeDesc": "Datos de mercado en vivo con soporte WebSocket.",
+      "secure": "Seguro",
+      "secureDesc": "Seguridad de nivel empresarial con autenticación mediante clave API."
+    },
+    "rateLimitsTitle": "Límites de tasa",
+    "rateLimitsDescription": "Las solicitudes API están limitadas para garantizar un uso justo y la estabilidad del sistema.",
+    "quickStartTitle": "Inicio rápido",
+    "quickStartDescription": "Comience con un ejemplo simple para obtener datos de precios de Bitcoin.",
+    "getPriceTitle": "Obtener datos de precios",
+    "getPriceDescription": "Recupere información de precios actual de cualquier criptomoneda compatible.",
+    "createWalletTitle": "Crear Billetera",
+    "createWalletDescription": "Cree una nueva billetera de criptomonedas para su aplicación.",
+    "webhookTitle": "Configurar Webhooks",
+    "webhookDescription": "Configure webhooks para recibir notificaciones en tiempo real sobre precios, transacciones y más."
+  }
+,
+  "Terms": {
+    "title": "Términos del Servicio",
+    "backToHome": "Volver al inicio",
+    "lastUpdated": "Última actualización: Julio 2025",
+    "sections": {
+      "1": {
+        "title": "1. Aceptación de Términos",
+        "content": "Al acceder y utilizar Nuestro Servicio, usted acepta y se compromete a cumplir..."
+      },
+      "2": {
+        "title": "2. Descripción del Servicio",
+        "content": "Nuestro Servicio proporciona una plataforma integral para gestionar proyectos..."
+      },
+      "3": {
+        "title": "3. Seguridad de la Cuenta",
+        "content": "Usted es el único responsable de mantener la confidencialidad de sus credenciales..."
+      },
+      "4": {
+        "title": "4. Conducta del Usuario",
+        "content": "Usted se compromete a utilizar Nuestro Servicio solo para fines legales y de una manera..."
+      },
+      "5": {
+        "title": "5. Tarifas y Pagos",
+        "content": "Si corresponde, las tarifas por el uso de funciones premium se detallan en nuestra página..."
+      },
+      "6": {
+        "title": "6. Propiedad Intelectual",
+        "content": "Todo el contenido, marcas registradas, logotipos y datos en Nuestro Servicio están protegidos..."
+      },
+      "7": {
+        "title": "7. Limitación de Responsabilidad",
+        "content": "Nuestro Servicio no será responsable por ningún daño indirecto, incidental, especial..."
+      },
+      "8": {
+        "title": "8. Terminación",
+        "content": "Nos reservamos el derecho de suspender o cancelar su cuenta sin previo aviso..."
+      }
+    }
+  },
+  "privacy":{
+  "back": "Volver al inicio",
+  "title": "Política de Privacidad",
+  "intro": "Tu privacidad es importante para nosotros. Esta política explica cómo recopilamos, usamos, divulgamos y protegemos tu información.",
+  "updated": "Última actualización: Julio de 2025",
+  "sections": {
+    "1": {
+      "title": "1. Información que recopilamos",
+      "content": "Recopilamos varios tipos de información en relación con los servicios que brindamos, incluyendo:",
+      "items": {
+        "personal": "Información Personal: Datos que proporcionas directamente, como tu nombre, correo electrónico y detalles de contacto.",
+        "usage": "Datos de Uso: Cómo accedes y usas nuestros servicios, incluyendo dirección IP, navegador y detalles de visitas.",
+        "device": "Información del Dispositivo: Modelo de hardware, sistema operativo e identificadores únicos del dispositivo."
+      }
+    },
+    "2": {
+      "title": "2. Cómo usamos tu información",
+      "content": "Utilizamos tu información para operar, mantener y mejorar nuestros servicios, comunicarnos contigo y prevenir fraudes."
+    },
+    "3": {
+      "title": "3. Compartir y divulgar información",
+      "content": "Podemos compartir tu información con proveedores, por motivos legales, en transferencias comerciales o con tu consentimiento."
+    },
+    "4": { "title": "4. Seguridad de los datos" },
+    "5": { "title": "5. Tus derechos de protección de datos" },
+    "6": { "title": "6. Cookies y tecnologías de seguimiento" },
+    "7": { "title": "7. Enlaces a otros sitios web" },
+    "8": { "title": "8. Cambios en esta política de privacidad" },
+    "9": { "title": "9. Contáctanos" }
+  }
+},
+  "cookies": {
+    "title": "Nuestra Política de Cookies",
+    "back": "Volver al inicio",
+    "description": "Esta política explica qué son las cookies, cómo las usamos y las opciones que tiene respecto a su uso.",
+    "what": {
+      "title": "¿Qué son las cookies?",
+      "text": "Las cookies son pequeños archivos de texto que se colocan en su dispositivo (ordenador, tableta, móvil) cuando visita sitios web. Se usan para que los sitios funcionen de manera más eficiente y para proporcionar información a los propietarios del sitio."
+    },
+    "types": {
+      "title": "Tipos de cookies que usamos",
+      "essential": "Cookies esenciales: Estas cookies son estrictamente necesarias para el funcionamiento de nuestro sitio web. Permiten funcionalidades básicas como la seguridad y la accesibilidad.",
+      "analytics": "Cookies de análisis/rendimiento: Estas cookies recopilan información sobre cómo los visitantes usan nuestro sitio web. Nos ayudan a mejorar su rendimiento y diseño.",
+      "functional": "Cookies funcionales: Estas cookies permiten que nuestro sitio recuerde sus elecciones (como el idioma o la región) y ofrezca funciones personalizadas.",
+      "marketing": "Cookies de marketing/segmentación: Estas cookies se usan para mostrar anuncios más relevantes para usted y medir la efectividad de las campañas publicitarias."
+    },
+    "thirdParty": {
+      "title": "Cookies de terceros",
+      "text": "Además de nuestras propias cookies, también podemos usar cookies de terceros para recopilar estadísticas de uso y mostrar anuncios, como Google Analytics."
+    },
+    "manage": {
+      "title": "Gestionar sus preferencias de cookies",
+      "text": "Tiene derecho a decidir si acepta o rechaza las cookies. Puede cambiar la configuración de su navegador para aceptarlas o rechazarlas."
+    },
+    "consent": {
+      "title": "Su consentimiento",
+      "text": "Al continuar utilizando nuestro sitio web, usted acepta el uso de cookies conforme a esta política."
+    },
+    "update": {
+      "title": "Actualizaciones de esta política",
+      "text": "Podemos actualizar esta política de cookies ocasionalmente para reflejar cambios en nuestro uso de cookies o por razones legales."
+    },
+    "lastUpdated": "Última actualización: Julio de 2025"
+  },
+  "register": {
+  "back": "Volver a inicio",
+  "createAccount": "Crear cuenta",
+  "subtitle": "Únete a nuestra plataforma de trading hoy",
+  "firstName": "Nombre",
+  "pfirstName": "Nombre",
+  "plastName":"apellido",
+  "pemail": "Ingrese el correo electrónico",
+  "lastName": "Apellido",
+  "email": "Correo electrónico",
+  "pusername":"Nombre de usuario",
+  "ppassword": "Introducir contraseña",
+  "pphoneNumber":"introducir el teléfono",
+  "username": "Nombre de usuario",
+  "password": "Contraseña",
+  "phoneNumber": "Número de teléfono",
+  "country": "País",
+  "language": "Idioma",
+  "dateOfBirth": "Fecha de nacimiento",
+  "pickDate": "Selecciona una fecha",
+  "searchCountries": "Buscar países...",
+  "noCountry": "No se encontró el país.",
+  "selectCountry": "Selecciona tu país",
+  "searchLanguages": "Buscar idiomas...",
+  "noLanguage": "No se encontró el idioma.",
+  "selectLanguage": "Selecciona tu idioma",
+  "submit": "Crear cuenta",
+  "loading": "Creando cuenta...",
+  "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+  "signIn": "Iniciar sesión",
+  "benefitsTitle": "Desbloquea tu potencial de trading",
+  "ss": "Acceso a más de 100 pares de criptomonedas,Herramientas avanzadas de trading y datos de mercado en tiempo real,Monedero seguro con protección líder en la industria,Monedero seguro con protección líder en la industria, Atención al cliente 24/7 y recursos educativos",
+  "benefits": [
+    "Acceso a más de 100 pares de criptomonedas",
+    "Herramientas avanzadas y datos en tiempo real",
+    "Cartera segura con protección líder",
+    "Soporte 24/7 y recursos educativos"
+  ],
+  "volume": "Volumen ",
+  "traders": "Traders activos",
+  "countries": "Países",
+  "placeholder": {
+    "firstName": "Introduce tu nombre",
+    "lastName": "Introduce tu apellido",
+    "email": "Introduce tu correo electrónico",
+    "username": "Elige un nombre de usuario",
+    "password": "Crea una contraseña",
+    "phoneNumber": "Introduce tu número de teléfono"
+  }
+},
+
+  "login": {
+    "back": "Volver al inicio",
+    "title": "Iniciar sesión",
+    "subtitle": "Bienvenido de nuevo a tu plataforma de trading",
+    "form": {
+      "emailOrUsername": "Correo electrónico o nombre de usuario",
+      "emailOrUsernamePlaceholder": "Introduce tu correo electrónico o nombre de usuario",
+      "password": "Contraseña",
+      "passwordPlaceholder": "Introduce tu contraseña",
+      "twoFactor": "Código de autenticación de dos factores",
+      "twoFactorPlaceholder": "Introduce el código 2FA",
+      "remember": "Recordarme",
+      "forgot": "¿Olvidaste tu contraseña?",
+      "submit": "Iniciar sesión",
+      "loading": "Iniciando sesión...",
+      "signUp": "Regístrate",
+      "error": "Algo salió mal"
+    },
+    "noAccount": "¿No tienes una cuenta?",
+    "benefits": {
+      "title": "Comienza a operar hoy",
+      "list": {
+        "0": "Acceso a más de 100 pares de criptomonedas",
+        "1": "Herramientas avanzadas de trading y datos de mercado en tiempo real",
+        "2": "Billetera segura con protección líder en la industria",
+        "3": "Soporte al cliente 24/7 y recursos educativos"
+      },
+      "volume": "Volumen total de trading",
+      "traders": "Traders activos",
+      "countries": "Países"
+    }
+  },
+   "dashboard": {
+    "title": "Panel de Control",
+    "overview": "Resumen",
+    "analytics": "Análisis",
+    "reports": "Informes",
+    "settings": "Configuración",
+    "loading": "Cargando panel...",
+    "errorTitle": "Error al Cargar el Panel",
+    "retry": "Reintentar",
+    "welcomeBack": "¡Bienvenido de vuelta, ",
+    "welcomeBackDefault": "¡Bienvenido de vuelta, Usuario!",
+    "subtitle": "Esto es lo que está pasando con tu cuenta de trading hoy.",
+    "primaryBalance": "Balance Principal",
+    "totalUsdValue": "Valor Total en USD",
+    "activeTickets": "Tickets Activos",
+    "tradingActivity": "Actividad de Trading",
+    "totalDeposits": "Total de Depósitos",
+    "totalWithdrawals": "Total de Retiros",
+    "lockedBalance": "Balance Bloqueado",
+    "recentTickets": "Tickets Recientes",
+    "recentTicketsDescription": "Tus últimas solicitudes de depósito y retiro.",
+    "noRecentTickets": "No hay tickets recientes",
+    "depositRequest": "Solicitud de Depósito",
+    "withdrawalRequest": "Solicitud de Retiro",
+    "currencyBreakdown": "Desglose por Moneda",
+    "currencyBreakdownDescription": "Tus balances por moneda.",
+    "noCurrenciesFound": "No se encontraron monedas",
+    "available": "Disponible:",
+    "locked": "Bloqueado:",
+    "wallet": "cartera",
+    "wallets": "carteras",
+    "account": "cuenta",
+    "accounts": "cuentas",
+    "totalTickets": "tickets totales",
+    "currenciesAvailable": "monedas disponibles",
+    "active": "Activo",
+    "ticketStatus": {
+      "pending": "Pendiente",
+      "processing": "Procesando",
+      "completed": "Completado",
+      "cancelled": "Cancelado",
+      "failed": "Fallido",
+      "rejected": "Rechazado"
+    }
+  },
+   "navigation": {
+    "dashboard": "Panel de Control",
+    "finance": "Finanzas",
+    "trading": "Comercio",
+    "profile": "Mi Perfil",
+    "documents": "Documentos"
+  },
+   "header": {
+    "dashboard": "Panel de Control",
+    "error": "Error",
+    "loading": "Cargando...",
+    "user": "Usuario",
+    "noEmail": "Sin correo",
+    "profile": "Perfil",
+    "logOut": "Cerrar sesión",
+    "loggingOut": "Cerrando sesión..."
+  },
+  "finance": {
+    "title": "Finanzas",
+    "subtitle": "Gestiona tus cuentas financieras, transacciones e inversiones.",
+    "loading": "Cargando datos financieros...",
+    "errorTitle": "Error al Cargar Datos Financieros",
+    "retry": "Reintentar",
+    "cashBalance": "Balance en Efectivo",
+    "investments": "Inversiones",
+    "holdings": "tenencias",
+    "tradingAccounts": "Cuentas de Trading",
+    "tradingAccountsDescription": "Resumen de tus cuentas de trading y su estado.",
+    "noTradingAccountsFound": "No se encontraron cuentas de trading",
+    "account": "Cuenta:",
+    "wallet": "cartera",
+    "wallets": "carteras",
+    "recentTransactions": "Transacciones Recientes",
+    "recentTransactionsDescription": "Últimas actividades de depósito y retiro.",
+    "noRecentTransactions": "No hay transacciones recientes",
+    "deposit": "Depósito",
+    "withdrawal": "Retiro",
+    "walletBreakdown": "Desglose de Carteras",
+    "walletBreakdownDescription": "Vista detallada de todos tus balances de cartera por moneda y cuenta.",
+    "noWalletsFound": "No se encontraron carteras",
+    "available": "Disponible:",
+    "locked": "Bloqueado:",
+    "accountStatus": {
+      "active": "Activo",
+      "suspended": "Suspendido"
+    },
+    "transactionStatus": {
+      "pending": "Pendiente",
+      "processing": "Procesando",
+      "completed": "Completado",
+      "cancelled": "Cancelado",
+      "failed": "Fallido",
+      "rejected": "Rechazado",
+      "unknown": "Desconocido"
+    }
+  },
+  "trading": {
+    "title": "Comercio",
+    "subtitle": "Gestiona tus cuentas de trading, crea tickets y ve el historial de transacciones.",
+    "loading": "Cargando datos de trading...",
+    "errorTitle": "Error al Cargar Datos de Trading",
+    "retry": "Reintentar",
+    "tabs": {
+      "accounts": "Cuentas de Trading",
+      "createAccount": "Crear Cuenta",
+      "create": "Crear Ticket",
+      "history": "Historial de Tickets"
+    },
+    "accounts": {
+      "title": "Seleccionar Cuenta de Trading",
+      "description": "Elige una cuenta para ver sus carteras y balances.",
+      "selectLabel": "Cuenta de Trading",
+      "selectPlaceholder": "Selecciona una cuenta de trading",
+      "available": "Disponible:",
+      "total": "Total:",
+      "locked": "Bloqueado:",
+      "noAccountSelected": "No hay cuenta seleccionada"
+    },
+    "createAccount": {
+      "title": "Crear Nueva Cuenta de Trading",
+      "description": "Crea una nueva cuenta de trading para comenzar a operar.",
+      "nameLabel": "Nombre de la Cuenta",
+      "namePlaceholder": "ej., Cuenta Principal de Trading",
+      "nameHelp": "Elige un nombre descriptivo para tu cuenta de trading",
+      "creating": "Creando Cuenta...",
+      "createButton": "Crear Cuenta de Trading",
+      "existingAccounts": "Cuentas Existentes",
+      "account": "Cuenta:",
+      "validationError": "Por favor ingresa un nombre de cuenta",
+      "successMessage": "¡Cuenta de trading creada exitosamente!",
+      "errorMessage": "Error al crear la cuenta de trading"
+    },
+    "createTicket": {
+      "title": "Crear Nuevo Ticket",
+      "description": "Crea un ticket de depósito o retiro para tu cuenta de trading.",
+      "accountLabel": "Cuenta de Trading",
+      "accountPlaceholder": "Selecciona una cuenta de trading",
+      "walletLabel": "Cartera",
+      "walletPlaceholder": "Selecciona una cartera",
+      "typeLabel": "Tipo de Ticket",
+      "typePlaceholder": "Selecciona el tipo de ticket",
+      "amountLabel": "Cantidad",
+      "amountPlaceholder": "Ingresa la cantidad",
+      "creating": "Creando...",
+      "createButton": "Crear Ticket",
+      "deposit": "Depósito",
+      "withdrawal": "Retiro",
+      "validationError": "Por favor selecciona una cartera e ingresa una cantidad válida",
+      "successMessage": "Ticket creado exitosamente con ID:",
+      "errorMessage": "No se pudo crear el ticket debido a fondos insuficientes. Por favor verifica tu balance e intenta de nuevo."
+    },
+    "history": {
+      "title": "Historial de Tickets",
+      "description": "Ve todos tus tickets de depósito y retiro.",
+      "showLabel": "Mostrar:",
+      "entries": "entradas",
+      "loading": "Cargando...",
+      "noTickets": "No se encontraron tickets",
+      "ticketId": "ID del Ticket:",
+      "showing": "Mostrando",
+      "to": "a",
+      "of": "de",
+      "entriesText": "entradas"
+    },
+    "ticketStatus": {
+      "pending": "Pendiente",
+      "processing": "Procesando",
+      "completed": "Completado",
+      "cancelled": "Cancelado",
+      "failed": "Fallido",
+      "rejected": "Rechazado",
+      "unknown": "Desconocido"
+    },
+    "accountStatus": {
+      "active": "Activo",
+      "suspended": "Suspendido"
+    }
+  },
+  "profile": {
+    "title": "Mi Perfil",
+    "subtitle": "Gestiona la configuración de tu cuenta e información personal.",
+    "loading": "Cargando...",
+    "personalInformation": "Información Personal",
+    "personalInformationDescription": "Actualiza tus datos personales e información de contacto.",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Email",
+    "phoneNumber": "Número de Teléfono",
+    "username": "Nombre de Usuario",
+    "saving": "Guardando...",
+    "saveChanges": "Guardar Cambios",
+    "successMessage": "¡Perfil actualizado exitosamente!",
+    "errorMessage": "Error al actualizar el perfil"
+  },
+  "documents": {
+    "title": "Documentos",
+    "subtitle": "Sube y gestiona tus documentos de forma segura.",
+    "tabs": {
+      "upload": "Subir Documentos",
+      "manage": "Gestionar Documentos"
+    },
+    "upload": {
+      "title": "Subir Documento",
+      "description": "Selecciona un archivo para subir a tu biblioteca de documentos.",
+      "dragAndDrop": "Arrastra y suelta tu archivo aquí, o haz clic para seleccionar",
+      "selectFile": "Seleccionar Archivo",
+      "uploading": "Subiendo...",
+      "uploadDocument": "Subir Documento",
+      "uploadSuccess": "¡Archivo subido exitosamente!",
+      "uploadFailed": "Error al subir",
+      "removeFile": "Eliminar archivo"
+    },
+    "table": {
+      "title": "Documentos",
+      "description": "Tus documentos subidos aparecerán aquí.",
+      "detailedDescription": "Tus documentos subidos y sus detalles.",
+      "loadingDocuments": "Cargando documentos...",
+      "noDocumentsYet": "Aún no se han subido documentos",
+      "fileId": "ID del Archivo:",
+      "refresh": "Actualizar",
+      "retry": "Reintentar",
+      "unknown": "Desconocido"
+    }
+  },
+  "resources": {
+    "blog": {
+      "title": "Nuestro Blog",
+      "subtitle": "Mantente al día con nuestras últimas noticias y perspectivas.",
+      "overview": {
+        "content": "Sumérgete en nuestros artículos sobre diversos temas, desde actualizaciones de productos hasta tendencias de la industria y guías útiles."
+      },
+      "quickStart": {
+        "title": "Guía de Inicio Rápido",
+        "content": "Aprende cómo empezar con nuestra plataforma en minutos. Esta sección cubre los conceptos básicos de configuración y los primeros pasos."
+      },
+      "authentication": {
+        "title": "Autenticación en Detalle",
+        "content": "Comprende nuestros mecanismos de autenticación, incluyendo cómo asegurar tus aplicaciones y gestionar el acceso de los usuarios."
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "apiUrl": {
+          "question": "¿Cuál es la URL de la API?",
+          "answer": "Nuestra API es accesible en https://api.example.com/v1. Consulta la documentación para puntos finales específicos."
+        },
+        "reportBug": {
+          "question": "¿Cómo reporto un error?",
+          "answer": "Puedes reportar errores a través de nuestro portal de soporte o enviando un correo electrónico a support@example.com. Por favor, incluye pasos detallados para la reproducción."
+        }
+      },
+      "backToHome": "Atrás"
+    },
+    "documentation": {
+      "title": "Documentación",
+      "subtitle": "Encuentra guías completas y referencias de API.",
+      "description": "Explora nuestra documentación detallada para empezar, entender funciones avanzadas y solucionar problemas comunes.",
+      "overview": {
+        "title": "Visión General",
+        "content": "Esta sección proporciona una introducción general a nuestra plataforma y sus funcionalidades principales. Aprende sobre la arquitectura y los componentes principales."
+      },
+      "quickStart": {
+        "title": "Guía de Inicio Rápido",
+        "content": "Sigue esta guía para configurar tu entorno y realizar tu primera llamada a la API en minutos. Perfecto para nuevos usuarios."
+      },
+      "auth": {
+        "title": "Autenticación y Autorización",
+        "content": "Comprende nuestros protocolos de seguridad, incluyendo la gestión de claves API, OAuth y permisos de roles de usuario."
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "q1": {
+          "question": "¿Cómo me integro con su API?",
+          "answer": "Nuestra API es RESTful y se puede integrar utilizando métodos HTTP estándar. Consulta la sección de Referencia de API para ejemplos detallados."
+        },
+        "q2": {
+          "question": "¿Cuáles son los límites de tasa de la API?",
+          "answer": "Nuestra API tiene un límite de tasa predeterminado de 100 solicitudes por minuto por clave API. Se pueden solicitar límites más altos para planes Enterprise."
+        }
+      }
+    }
+  },
+  "docs": {
+    "title": "Fundamentos de las Criptomonedas",
+    "whatIs": {
+      "title": "¿Qué es una Criptomoneda?",
+      "text": "Una criptomoneda es una moneda digital o virtual que utiliza criptografía para la seguridad. Funciona en redes descentralizadas basadas en tecnología blockchain."
+    },
+    "blockchain": {
+      "title": "¿Cómo Funciona Blockchain?",
+      "text": "Un blockchain es un libro mayor distribuido que registra todas las transacciones en una red. Cada bloque contiene múltiples transacciones, y los bloques están conectados en orden cronológico."
+    },
+    "popular": {
+      "title": "Criptomonedas Populares",
+      "bitcoin": "La primera y más conocida criptomoneda.",
+      "ethereum": "Conocida por su funcionalidad de contratos inteligentes.",
+      "solana": "Una blockchain de alta velocidad para aplicaciones descentralizadas.",
+      "ripple": "Enfocada en pagos globales en tiempo real."
+    },
+    "buy": {
+      "title": "Cómo Comprar Criptomonedas",
+      "step1": "Elige un intercambio confiable (por ejemplo, Coinbase, Binance).",
+      "step2": "Crea una cuenta y verifica tu identidad.",
+      "step3": "Deposita fondos mediante transferencia bancaria o tarjeta.",
+      "step4": "Compra la criptomoneda deseada y guárdala en una billetera."
+    },
+    "tips": {
+      "title": "Consejos Importantes",
+      "tip1": "Usa siempre autenticación de dos factores (2FA).",
+      "tip2": "Guarda grandes cantidades en una billetera fría (offline).",
+      "tip3": "Investiga antes de invertir en nuevos tokens.",
+      "tip4": "Cuidado con estafas y correos de phishing."
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
