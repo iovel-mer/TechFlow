@@ -390,28 +390,96 @@
       "author": "Michael Novogratz, CEO of Galaxy Digital"
     }
   },
+ 
   "Docs": {
-    "backToHome":"Back to Home",
-    "title": "CryptoAPI Documentation",
-    "description": "A comprehensive REST API for cryptocurrency market data, wallet management, and blockchain interactions.",
+    "backToHome": "Back to Home",
+    "title": "Documentation",
+    "description": "Everything you need to get started, integrate, and extend our platform.",
+    "tableOfContents": "Table of contents",
+    "toc": {
+      "introduction": "Introduction",
+      "gettingStarted": "Getting started",
+      "installation": "Installation",
+      "api": "API reference",
+      "examples": "Examples",
+      "faq": "FAQ",
+      "contribute": "Contribute"
+    },
+
     "features": {
       "easy": "Easy to Use",
-      "easyDesc": "Simple REST API with comprehensive documentation and examples.",
-      "realtime": "Real-time Data",
-      "realtimeDesc": "Live market data with WebSocket support for real-time updates.",
-      "secure": "Secure",
-      "secureDesc": "Enterprise-grade security with API key authentication."
+      "easyDesc": "Designed for simplicity — get started in minutes without any setup headaches.",
+      "realtime": "Real-Time Updates",
+      "realtimeDesc": "Live updates and streams mean your users always see the latest data instantly.",
+      "secure": "Advanced Security",
+      "secureDesc": "We use strong encryption, MFA and active monitoring to keep your data safe.",
+      "customizable": "Highly Customizable",
+      "customizableDesc": "Flexible theming and plugin systems let you tailor the product to your needs.",
+      "scalable": "Scalable Architecture",
+      "scalableDesc": "Built to scale from prototypes to production workloads with minimal changes.",
+      "support": "Professional Support",
+      "supportDesc": "Comprehensive docs, examples and responsive support when you need it."
     },
-    "rateLimitsTitle": "Rate Limits",
-    "rateLimitsDescription": "API requests are rate limited to ensure fair usage and system stability.",
-    "quickStartTitle": "Quick Start",
-    "quickStartDescription": "Get started with a simple example to fetch Bitcoin price data.",
-    "getPriceTitle": "Get Price Data",
-    "getPriceDescription": "Retrieve current price information for any supported cryptocurrency.",
-    "createWalletTitle": "Create Wallet",
-    "createWalletDescription": "Create a new cryptocurrency wallet for your application.",
-    "webhookTitle": "Setup Webhooks",
-    "webhookDescription": "Configure webhooks to receive real-time notifications about price changes, transactions, and other events."
+
+    "gettingStarted": {
+      "title": "Getting Started",
+      "intro": "A quick three-step guide to get your project up and running.",
+      "step1": "Create an account",
+      "step1Desc": "Sign up on our dashboard and create your first project. You can start with the free tier.",
+      "step2": "Install the SDK",
+      "step2Desc": "Install the official SDK or use the REST API depending on your stack.",
+      "step3": "Initialize and test",
+      "step3Desc": "Run the simple initialization command and verify everything in the dashboard."
+    },
+
+    "installation": {
+      "title": "Installation",
+      "intro": "Install the client library for your project using the package manager of your choice.",
+      "command": "npm install @yourorg/docs"
+    },
+
+    "api": {
+      "title": "API Reference",
+      "intro": "Main endpoints to interact with our service.",
+      "endpoints": {
+        "listDocs": {
+          "title": "GET /api/docs",
+          "desc": "Retrieve a list of all documentation resources, with pagination and filters."
+        },
+        "createDoc": {
+          "title": "POST /api/docs",
+          "desc": "Create a new documentation entry. Requires authentication and content payload."
+        }
+      }
+    },
+
+    "examples": {
+      "title": "Examples",
+      "intro": "Copy-pasteable examples to help you start quickly.",
+      "example1Code": "import { initDocs } from '@yourorg/docs';\n\nconst docs = initDocs({ apiKey: process.env.DOCS_API_KEY });\nawait docs.load();\nconsole.log('Docs loaded');"
+    },
+
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": {
+        "q": "How do I add translations?",
+        "a": "Create JSON files for each locale and load them with next-intl. Use useTranslations('Docs') in components."
+      },
+      "q2": {
+        "q": "Can I self-host the service?",
+        "a": "Yes — we provide a self-hosting guide and Docker images for on-prem deployments."
+      }
+    },
+
+    "contribute": {
+      "title": "Contribute",
+      "text": "Contributions are welcome. Fork the repo, open a branch, and submit a PR with your changes."
+    },
+
+    "contact": {
+      "title": "Support",
+      "email": "support@yourorg.com"
+    }
   },
   "Terms": {
     "title": "Terms of Service",

@@ -12,7 +12,7 @@ export default function BlogPage() {
   return (
     <>
     <Header/>
-      <div className="min-h-screen bg-black text-white py-12">
+      <main className="min-h-screen max-w-7xl mx-auto bg-black text-white py-12">
            <Link
   href={`/${locale}`}
   className=" ml-15
@@ -75,7 +75,7 @@ export default function BlogPage() {
             </div>
           </article>
         </div>
-      </div>
+      </main>
      
     </>
   );

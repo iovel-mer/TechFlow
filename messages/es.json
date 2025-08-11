@@ -389,26 +389,93 @@
   ,
   "Docs": {
     "backToHome": "Volver al inicio",
-    "title": "Documentación de CryptoAPI",
-    "description": "Una API REST completa para datos del mercado de criptomonedas, gestión de billeteras e interacciones blockchain.",
+    "title": "Documentación",
+    "description": "Todo lo necesario para empezar, integrar y extender nuestra plataforma.",
+    "tableOfContents": "Índice",
+    "toc": {
+      "introduction": "Introducción",
+      "gettingStarted": "Primeros pasos",
+      "installation": "Instalación",
+      "api": "Referencia API",
+      "examples": "Ejemplos",
+      "faq": "Preguntas frecuentes",
+      "contribute": "Contribuir"
+    },
+
     "features": {
       "easy": "Fácil de usar",
-      "easyDesc": "API REST simple con documentación y ejemplos completos.",
-      "realtime": "Datos en tiempo real",
-      "realtimeDesc": "Datos de mercado en vivo con soporte WebSocket.",
-      "secure": "Seguro",
-      "secureDesc": "Seguridad de nivel empresarial con autenticación mediante clave API."
+      "easyDesc": "Diseñado para la simplicidad: comienza en minutos sin complicaciones.",
+      "realtime": "Actualizaciones en tiempo real",
+      "realtimeDesc": "Actualizaciones en vivo para que tus usuarios siempre vean los datos más recientes.",
+      "secure": "Seguridad avanzada",
+      "secureDesc": "Usamos cifrado fuerte, MFA y monitorización activa para proteger tus datos.",
+      "customizable": "Altamente personalizable",
+      "customizableDesc": "Temas y plugins flexibles para adaptar el producto a tus necesidades.",
+      "scalable": "Arquitectura escalable",
+      "scalableDesc": "Construido para escalar desde prototipos hasta cargas de producción.",
+      "support": "Soporte profesional",
+      "supportDesc": "Documentación completa, ejemplos y soporte cuando lo necesites."
     },
-    "rateLimitsTitle": "Límites de tasa",
-    "rateLimitsDescription": "Las solicitudes API están limitadas para garantizar un uso justo y la estabilidad del sistema.",
-    "quickStartTitle": "Inicio rápido",
-    "quickStartDescription": "Comience con un ejemplo simple para obtener datos de precios de Bitcoin.",
-    "getPriceTitle": "Obtener datos de precios",
-    "getPriceDescription": "Recupere información de precios actual de cualquier criptomoneda compatible.",
-    "createWalletTitle": "Crear Billetera",
-    "createWalletDescription": "Cree una nueva billetera de criptomonedas para su aplicación.",
-    "webhookTitle": "Configurar Webhooks",
-    "webhookDescription": "Configure webhooks para recibir notificaciones en tiempo real sobre precios, transacciones y más."
+
+    "gettingStarted": {
+      "title": "Primeros pasos",
+      "intro": "Guía rápida de tres pasos para poner tu proyecto en marcha.",
+      "step1": "Crea una cuenta",
+      "step1Desc": "Regístrate en nuestro panel y crea tu primer proyecto. Puedes empezar con el plan gratuito.",
+      "step2": "Instala el SDK",
+      "step2Desc": "Instala el SDK oficial o usa la API REST según tu stack.",
+      "step3": "Inicializa y prueba",
+      "step3Desc": "Ejecuta el comando de inicialización y verifica todo desde el panel."
+    },
+
+    "installation": {
+      "title": "Instalación",
+      "intro": "Instala la librería cliente en tu proyecto usando el gestor de paquetes que prefieras.",
+      "command": "npm install @yourorg/docs"
+    },
+
+    "api": {
+      "title": "Referencia API",
+      "intro": "Endpoints principales para interactuar con nuestro servicio.",
+      "endpoints": {
+        "listDocs": {
+          "title": "GET /api/docs",
+          "desc": "Recupera la lista de recursos de documentación, con paginación y filtros."
+        },
+        "createDoc": {
+          "title": "POST /api/docs",
+          "desc": "Crea una nueva entrada de documentación. Requiere autenticación y payload."
+        }
+      }
+    },
+
+    "examples": {
+      "title": "Ejemplos",
+      "intro": "Ejemplos para copiar y pegar que te ayudarán a empezar rápido.",
+      "example1Code": "import { initDocs } from '@yourorg/docs';\n\nconst docs = initDocs({ apiKey: process.env.DOCS_API_KEY });\nawait docs.load();\nconsole.log('Docs cargada');"
+    },
+
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": {
+        "q": "¿Cómo añado traducciones?",
+        "a": "Crea archivos JSON por cada locale y cárgalos con next-intl. Usa useTranslations('Docs') en los componentes."
+      },
+      "q2": {
+        "q": "¿Puedo alojarlo por mi cuenta?",
+        "a": "Sí — proporcionamos guía de self-hosting e imágenes Docker para despliegues on‑premise."
+      }
+    },
+
+    "contribute": {
+      "title": "Contribuir",
+      "text": "Las contribuciones son bienvenidas. Haz fork, crea una rama y abre un PR con tus cambios."
+    },
+
+    "contact": {
+      "title": "Soporte",
+      "email": "soporte@yourorg.com"
+    }
   }
 ,
   "Terms": {

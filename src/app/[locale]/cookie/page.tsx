@@ -23,7 +23,7 @@ export default function CookiePage() {
     <>
   <Header/>
       <div className="min-h-screen bg-black text-white  py-12">
-         <div className='m-10'>
+         <div className='max-w-7xl mx-auto'>
         <Link
           href={`/${locale}`}
            className="
@@ -35,8 +35,6 @@ export default function CookiePage() {
     px-4 py-2
     text-sm font-medium
     transition
-   
-    focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2
     shadow-sm
   "
         >
@@ -44,7 +42,7 @@ export default function CookiePage() {
           <span>{t('back')}</span>
         </Link>
       </div>
-        <Card className="max-w-3xl mx-auto bg-black text-white border border-white">
+        <Card className="max-w-3xl mx-auto mt-10 bg-black text-white border border-white">
           <CardHeader>
             <CardTitle className="text-3xl font-bold text-white mt-4">
               {t('title')}

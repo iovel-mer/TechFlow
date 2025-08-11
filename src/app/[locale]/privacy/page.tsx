@@ -22,7 +22,7 @@ export default function PrivacyPage() {
   return (
     <>
     <Header/>
-<div className="min-h-screen  bg-black text-white px-4 ">
+<div className="min-h-screen  bg-black text-white px-4 pt-15 ">
       {/* Top-left back button */}
 
       {/* Centered card */}

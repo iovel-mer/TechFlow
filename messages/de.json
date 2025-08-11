@@ -404,28 +404,95 @@
     }
   }
   ,
-  "Docs": {
+"Docs": {
     "backToHome": "Zurück zur Startseite",
-    "title": "CryptoAPI-Dokumentation",
-    "description": "Eine umfassende REST-API für Marktdaten, Wallet-Verwaltung und Blockchain-Interaktionen.",
-    "features": {
-      "easy": "Einfach zu benutzen",
-      "easyDesc": "Einfache REST-API mit ausführlicher Dokumentation und Beispielen.",
-      "realtime": "Echtzeitdaten",
-      "realtimeDesc": "Live-Marktdaten mit WebSocket-Unterstützung.",
-      "secure": "Sicher",
-      "secureDesc": "Unternehmenssichere API mit Schlüssel-Authentifizierung."
+    "title": "Dokumentation",
+    "description": "Alles, was du brauchst, um unsere Plattform zu starten, zu integrieren und zu erweitern.",
+    "tableOfContents": "Inhaltsverzeichnis",
+    "toc": {
+      "introduction": "Einführung",
+      "gettingStarted": "Erste Schritte",
+      "installation": "Installation",
+      "api": "API-Referenz",
+      "examples": "Beispiele",
+      "faq": "FAQ",
+      "contribute": "Mitwirken"
     },
-    "rateLimitsTitle": "Anfragelimits",
-    "rateLimitsDescription": "API-Anfragen sind begrenzt, um faire Nutzung und Systemstabilität zu gewährleisten.",
-    "quickStartTitle": "Schnellstart",
-    "quickStartDescription": "Beginnen Sie mit einem einfachen Beispiel, um Bitcoin-Preisdaten abzurufen.",
-    "getPriceTitle": "Preisdaten abrufen",
-    "getPriceDescription": "Aktuelle Preisinformationen für unterstützte Kryptowährungen abrufen.",
-    "createWalletTitle": "Wallet erstellen",
-    "createWalletDescription": "Erstellen Sie eine neue Krypto-Wallet für Ihre Anwendung.",
-    "webhookTitle": "Webhooks einrichten",
-    "webhookDescription": "Webhooks konfigurieren, um Echtzeitbenachrichtigungen zu erhalten."
+
+    "features": {
+      "easy": "Einfach zu bedienen",
+      "easyDesc": "Für Einfachheit entwickelt — starte in wenigen Minuten ohne komplizierte Einrichtung.",
+      "realtime": "Echtzeit-Updates",
+      "realtimeDesc": "Live-Updates sorgen dafür, dass Nutzer sofort die neuesten Daten sehen.",
+      "secure": "Erweiterte Sicherheit",
+      "secureDesc": "Wir verwenden starke Verschlüsselung, MFA und aktive Überwachung zum Schutz deiner Daten.",
+      "customizable": "Hochgradig anpassbar",
+      "customizableDesc": "Flexible Themes und Plugins, damit du das Produkt an deine Bedürfnisse anpassen kannst.",
+      "scalable": "Skalierbare Architektur",
+      "scalableDesc": "Von Prototypen bis hin zu Produktionslasten skalierbar — mit wenigen Anpassungen.",
+      "support": "Professioneller Support",
+      "supportDesc": "Ausführliche Dokumentation, Beispiele und hilfsbereiter Support wenn benötigt."
+    },
+
+    "gettingStarted": {
+      "title": "Erste Schritte",
+      "intro": "Eine kurze Drei-Schritte-Anleitung, um dein Projekt zum Laufen zu bringen.",
+      "step1": "Konto erstellen",
+      "step1Desc": "Registriere dich im Dashboard und erstelle dein erstes Projekt. Du kannst mit dem kostenlosen Plan beginnen.",
+      "step2": "SDK installieren",
+      "step2Desc": "Installiere das offizielle SDK oder verwende die REST-API, je nach Stack.",
+      "step3": "Initialisieren und testen",
+      "step3Desc": "Führe den Initialisierungsbefehl aus und prüfe alles im Dashboard."
+    },
+
+    "installation": {
+      "title": "Installation",
+      "intro": "Installiere die Client-Bibliothek für dein Projekt mit dem Paketmanager deiner Wahl.",
+      "command": "npm install @yourorg/docs"
+    },
+
+    "api": {
+      "title": "API-Referenz",
+      "intro": "Wichtige Endpunkte zur Interaktion mit unserem Service.",
+      "endpoints": {
+        "listDocs": {
+          "title": "GET /api/docs",
+          "desc": "Gibt eine Liste aller Dokumentationsressourcen zurück, mit Paginierung und Filtern."
+        },
+        "createDoc": {
+          "title": "POST /api/docs",
+          "desc": "Erstellt einen neuen Dokumentationseintrag. Erfordert Authentifizierung und Payload."
+        }
+      }
+    },
+
+    "examples": {
+      "title": "Beispiele",
+      "intro": "Schnell nutzbare Beispiele, damit du sofort loslegen kannst.",
+      "example1Code": "import { initDocs } from '@yourorg/docs';\n\nconst docs = initDocs({ apiKey: process.env.DOCS_API_KEY });\nawait docs.load();\nconsole.log('Docs geladen');"
+    },
+
+    "faq": {
+      "title": "Häufige Fragen",
+      "q1": {
+        "q": "Wie füge ich Übersetzungen hinzu?",
+        "a": "Erstelle JSON-Dateien für jede Locale und lade sie mit next-intl. Verwende useTranslations('Docs') in Komponenten."
+      },
+      "q2": {
+        "q": "Kann ich den Service selbst hosten?",
+        "a": "Ja — wir bieten eine Self-Hosting-Anleitung und Docker-Images für On‑Premise-Deployments."
+      }
+    },
+
+    "contribute": {
+      "title": "Mitwirken",
+      "text": "Beiträge sind willkommen. Forke das Repo, erstelle einen Branch und öffne einen PR mit deinen Änderungen."
+    },
+
+    "contact": {
+      "title": "Support",
+      "email": "support@yourorg.com"
+    }
   }
 ,
   "Terms": {
