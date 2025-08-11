@@ -91,7 +91,7 @@ export function Sidebar({ className }: SidebarProps) {
           className='flex h-[63px] items-center gap-2 font-semibold'
         >
           <div className='h-8 w-8 rounded-lg flex items-center justify-center'>
-           <Zap size={24} className="text-white" />
+          
           </div>
           <span className='text-lg'>TechFlow</span>
         </Link>
