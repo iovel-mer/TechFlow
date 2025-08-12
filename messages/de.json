@@ -82,6 +82,7 @@
   },
   "Market": {
     "badge": "Live-Marktdaten",
+    "volume":"Volumen",
     "title": "Echtzeit-Markteinblicke",
     "description": "Bleiben Sie auf dem Laufenden mit Live-Kryptopreisen und Marktbewegungen – alle 15 Sekunden aktualisiert.",
     "loading": "Lade aktuelle Marktdaten...",

@@ -111,9 +111,9 @@ export async function getMarketData() {
       ETH: "Ethereum",
       ADA: "Cardano",
       DOT: "Polkadot",
-      BNB: "Binance Coin",
+      BNB: "Binance",
       SOL: "Solana",
-      AVAX: "Aval",
+      AVAX: "Avalanche",
       MATIC: "Polygon",
     }
 

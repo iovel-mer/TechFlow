@@ -1,27 +1,38 @@
-"use client"
-import type React from "react"
-import { useTranslations } from "next-intl"
-import { TrendingUp, Shield, Zap, Users, Globe, ArrowRight, DollarSign } from "lucide-react"
-import Link from "next/link"
+"use client";
+import type React from "react";
+import { useTranslations } from "next-intl";
+import {
+  TrendingUp,
+  Shield,
+  Zap,
+  Users,
+  Globe,
+  ArrowRight,
+  DollarSign,
+} from "lucide-react";
+import Link from "next/link";
 
 export const Trading: React.FC = () => {
-  const t = useTranslations("Trading")
+  const t = useTranslations("Trading");
   return (
-    <section className=" py-50 bg-black text-white border border-gray-300 relative overflow-hidden">
+    <section className="py-20 bg-black text-white border-t border-b border-gray-300 relative overflow-hidden">
       {/* Subtle background pattern for depth */}
       <div
-        className="absolute inset-0 z-0 opacity-10"
+        className="absolute inset-0 z-0 opacity-10 pointer-events-none"
         style={{
-          backgroundImage: "radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05) 1px, transparent 1px)",
+          backgroundImage:
+            "radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05) 1px, transparent 1px)",
           backgroundSize: "20px 20px",
         }}
-      ></div>
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 md:mb-20 lg:mb-24 animate-fade-in-up">
-          <div className="inline-flex items-center bg-gray-900/50 border border-cyan-500/30 rounded-full px-6 py-2 mb-6 backdrop-blur-sm shadow-lg">
+          <div className="inline-flex items-center bg-gray-900/50 border border-cyan-500/30 rounded-full px-6 py-2 mb-6 backdrop-blur-sm shadow-lg mx-auto max-w-max">
             <Shield className="w-4 h-4 mr-2 text-cyan-400" />
-            <span className="text-sm font-semibold text-cyan-300 uppercase tracking-wider">{t("badge")}</span>
+            <span className="text-sm font-semibold text-cyan-300 uppercase tracking-wider">
+              {t("badge")}
+            </span>
           </div>
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 text-white leading-tight">
             {t("title")}
@@ -88,29 +99,33 @@ export const Trading: React.FC = () => {
 
         {/* CTA */}
         <div className="text-center animate-scale-in delay-300">
-          <Link href="/register" passHref>
-            <button className="group relative px-10 py-4 md:px-12 md:py-5 bg-white text-black font-extrabold text-lg rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl uppercase tracking-wider overflow-hidden">
-              <span className="relative z-10 flex items-center justify-center">
-                {t("cta")}
-                <ArrowRight className="inline ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </span>
-              <span className="absolute cursor-pointer inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-            </button>
-          </Link>
+         <Link href="/register" aria-label={t("cta")}>
+  <button
+    type="button"
+    className="group relative inline-flex px-10 py-4 md:px-12 md:py-5 bg-white text-black font-extrabold text-lg rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl uppercase tracking-wider overflow-hidden"
+  >
+    <span className="relative z-10 flex items-center justify-center">
+      {t("cta")}
+      <ArrowRight className="inline ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+    </span>
+    <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></span>
+  </button>
+</Link>
+
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 type FeatureProps = {
-  icon: React.ReactNode
-  title: string
-  description: string
-  borderColorClass: string // Use predefined Tailwind classes
-  gradientClass: string // Use predefined Tailwind classes
-  hoverTextColorClass: string // Use predefined Tailwind classes
-}
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  borderColorClass: string; // Tailwind classes for border color
+  gradientClass: string; // Tailwind classes for gradient background
+  hoverTextColorClass: string; // Tailwind classes for hover text color
+};
 
 const Feature: React.FC<FeatureProps> = ({
   icon,
@@ -125,15 +140,21 @@ const Feature: React.FC<FeatureProps> = ({
   >
     <div
       className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${gradientClass} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500`}
-    ></div>
+    />
     <div className="p-6 md:p-8">
       <div
         className={`w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br ${gradientClass} flex items-center justify-center rounded-xl mb-5 transform group-hover:rotate-6 transition-transform duration-300 shadow-lg`}
       >
         {icon}
       </div>
-      <h3 className={`text-xl md:text-2xl font-black mb-3 ${hoverTextColorClass} transition-colors`}>{title}</h3>
-      <p className="text-gray-300 leading-relaxed font-normal text-base md:text-lg">{description}</p>
+      <h3
+        className={`text-xl md:text-2xl font-black mb-3 ${hoverTextColorClass} transition-colors`}
+      >
+        {title}
+      </h3>
+      <p className="text-gray-300 leading-relaxed font-normal text-base md:text-lg">
+        {description}
+      </p>
     </div>
   </div>
-)
+);

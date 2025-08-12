@@ -74,6 +74,7 @@
   },
   "Market": {
     "badge": "Live Market Data",
+    "volume":"Volume",
     "title": "Real-Time Market Insights",
     "description": "Stay ahead with live cryptocurrency prices and market movements updated every 15 seconds.",
     "loading": "Fetching latest market data...",

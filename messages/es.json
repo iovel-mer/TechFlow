@@ -66,6 +66,7 @@
   },
   "Market": {
     "badge": "Datos de mercado en vivo",
+    "volume":"Volumen",
     "title": "Información del mercado en tiempo real",
     "description": "Mantente al tanto con precios de criptomonedas y movimientos del mercado actualizados cada 15 segundos.",
     "loading": "Cargando datos de mercado...",

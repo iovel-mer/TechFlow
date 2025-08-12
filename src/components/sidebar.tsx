@@ -85,14 +85,11 @@ export function Sidebar({ className }: SidebarProps) {
   ];
   const SidebarContent = () => (
     <div className='flex h-full flex-col'>
-      <div className='flex items-center px-2 border-b mb-3'>
+      <div className='p-5'>
         <Link
           href='/dashboard'
-          className='flex h-[63px] items-center gap-2 font-semibold'
+          className=' font-semibold'
         >
-          <div className='h-8 w-8 rounded-lg flex items-center justify-center'>
-          
-          </div>
           <span className='text-lg'>TechFlow</span>
         </Link>
       </div>
