@@ -144,7 +144,7 @@ export const Market: React.FC = () => {
                 className="group bg-gray-900/50 p-6 rounded-xl shadow-lg border border-gray-800 transition-all duration-300 hover:shadow-2xl hover:border-cyan-600 transform hover:-translate-y-1 animate-fade-in-up"
               >
                 <div className="flex items-start justify-between mb-5">
-                  <div className="flex items-center space-x-4">
+                  <div className="flex items-center space-x-2">
                     <CryptoLogo coin={coin} size={48} />
                     <div>
                       <h4 className="font-semibold text-xl text-white pr-4">{coin.name}</h4>

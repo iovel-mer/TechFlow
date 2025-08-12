@@ -40,11 +40,9 @@ export default function ContactPage() {
   const [message, setMessage] = useState('');
   const [isFormValid, setIsFormValid] = useState(false);
 
-  // Email validation regex
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   useEffect(() => {
-    // Check if all fields are valid
     const valid =
       name.trim().length > 0 &&
       emailRegex.test(email) &&
@@ -55,8 +53,8 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!isFormValid) return; // Extra safety
-    
+    if (!isFormValid) return;
+
     setTimeout(() => {
       router.push('/');
     }, 2000);
@@ -65,44 +63,48 @@ export default function ContactPage() {
   return (
     <>
       <Header />
-      <div className='container mx-auto p-20  bg-black text-white'>
-        <div className='mb-20 text-left ml-10'>
+      <div className="bg-black text-white min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        {/* Back to Home */}
+        <div className="mb-10 sm:mb-12">
           <Link
             href={`/${locale}`}
-             className="
-    inline-flex items-center gap-2
-    border-2 border-white
-    bg-transparent
-    text-white
-    rounded-full
-    px-4 py-2
-    text-sm font-medium
-    transition
-    shadow-sm
-  "
+            className="
+              inline-flex items-center gap-2
+              border-2 border-white
+              bg-transparent
+              text-white
+              rounded-full
+              px-4 py-2
+              text-sm font-medium
+              transition
+              shadow-sm
+              hover:bg-white/10
+            "
           >
             <ArrowLeft size={18} />
             <span>{t('backToHome')}</span>
           </Link>
         </div>
 
-        <div className='max-w-3xl mx-auto text-center mb-12 md:mb-16'>
-          <h1 className='text-4xl font-bold tracking-tight sm:text-5xl mb-4'>
+        {/* Header Section */}
+        <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">
             {t('getInTouch')}
           </h1>
-          <p className='text-lg text-white'>{t('introText')}</p>
+          <p className="text-lg text-gray-300">{t('introText')}</p>
         </div>
 
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16'>
-          {/* Contact Information */}
-          <div className='space-y-6'>
+        {/* Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+          {/* Contact Information Cards */}
+          <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle className='flex items-center gap-2'>
-                  <Mail className='h-5 w-5 text-primary' />
+                <CardTitle className="flex items-center gap-2 text-lg sm:text-xl">
+                  <Mail className="h-5 w-5 text-primary" />
                   {t('generalInquiries.title')}
                 </CardTitle>
-                <CardDescription>
+                <CardDescription className="text-gray-300">
                   {t('generalInquiries.description')}
                 </CardDescription>
               </CardHeader>
@@ -110,11 +112,11 @@ export default function ContactPage() {
 
             <Card>
               <CardHeader>
-                <CardTitle className='flex items-center gap-2'>
-                  <Phone className='h-5 w-5 text-primary' />
+                <CardTitle className="flex items-center gap-2 text-lg sm:text-xl">
+                  <Phone className="h-5 w-5 text-primary" />
                   {t('technicalSupport.title')}
                 </CardTitle>
-                <CardDescription>
+                <CardDescription className="text-gray-300">
                   {t('technicalSupport.description')}
                 </CardDescription>
               </CardHeader>
@@ -122,11 +124,11 @@ export default function ContactPage() {
 
             <Card>
               <CardHeader>
-                <CardTitle className='flex items-center gap-2'>
-                  <Users className='h-5 w-5 text-primary' />
+                <CardTitle className="flex items-center gap-2 text-lg sm:text-xl">
+                  <Users className="h-5 w-5 text-primary" />
                   {t('partnerships.title')}
                 </CardTitle>
-                <CardDescription>
+                <CardDescription className="text-gray-300">
                   {t('partnerships.description')}
                 </CardDescription>
               </CardHeader>
@@ -134,77 +136,66 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <Card className='h-fit'>
+          <Card className="h-fit">
             <CardHeader>
-              <CardTitle>{t('form.title')}</CardTitle>
-              <CardDescription>{t('form.description')}</CardDescription>
+              <CardTitle className="text-2xl sm:text-3xl">{t('form.title')}</CardTitle>
+              <CardDescription className="text-gray-300">
+                {t('form.description')}
+              </CardDescription>
             </CardHeader>
             <CardContent>
-              <form className='space-y-4' onSubmit={handleSubmit}>
-                <div className='grid gap-2'>
-                  <Label htmlFor='name'>{t('form.name')}</Label>
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                <div className="grid gap-2">
+                  <Label htmlFor="name">{t('form.name')}</Label>
                   <Input
-                    id='name'
+                    id="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder={t('form.namePlaceholder')}
                   />
                 </div>
-                <div className='grid gap-2'>
-                  <Label htmlFor='email'>{t('form.email')}</Label>
+
+                <div className="grid gap-2">
+                  <Label htmlFor="email">{t('form.email')}</Label>
                   <Input
-                    id='email'
-                    type='email'
+                    id="email"
+                    type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder={t('form.emailPlaceholder')}
                   />
                 </div>
-                <div className='grid gap-2'>
-                  <Label htmlFor='subject'>{t('form.subject')}</Label>
+
+                <div className="grid gap-2">
+                  <Label htmlFor="subject">{t('form.subject')}</Label>
                   <Select value={subject} onValueChange={setSubject}>
-                    <SelectTrigger id='subject'>
-                      <SelectValue
-                        placeholder={t('form.subjectPlaceholder')}
-                      />
+                    <SelectTrigger id="subject">
+                      <SelectValue placeholder={t('form.subjectPlaceholder')} />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value='general'>
-                        {t('form.subjectOptions.general')}
-                      </SelectItem>
-                      <SelectItem value='technical'>
-                        {t('form.subjectOptions.technical')}
-                      </SelectItem>
-                      <SelectItem value='billing'>
-                        {t('form.subjectOptions.billing')}
-                      </SelectItem>
-                      <SelectItem value='partnership'>
-                        {t('form.subjectOptions.partnership')}
-                      </SelectItem>
-                      <SelectItem value='other'>
-                        {t('form.subjectOptions.other')}
-                      </SelectItem>
+                      <SelectItem value="general">{t('form.subjectOptions.general')}</SelectItem>
+                      <SelectItem value="technical">{t('form.subjectOptions.technical')}</SelectItem>
+                      <SelectItem value="billing">{t('form.subjectOptions.billing')}</SelectItem>
+                      <SelectItem value="partnership">{t('form.subjectOptions.partnership')}</SelectItem>
+                      <SelectItem value="other">{t('form.subjectOptions.other')}</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
-                <div className='grid gap-2'>
-                  <Label htmlFor='message'>{t('form.message')}</Label>
+
+                <div className="grid gap-2">
+                  <Label htmlFor="message">{t('form.message')}</Label>
                   <Textarea
-                    id='message'
+                    id="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder={t('form.messagePlaceholder')}
-                    className='min-h-[120px]'
+                    className="min-h-[120px]"
                   />
                 </div>
-                <Button
-                  type='submit'
-                  className='w-full'
-                  disabled={!isFormValid}
-                >
+
+                <Button type="submit" className="w-full" disabled={!isFormValid}>
                   {t('form.sendButton')}
                 </Button>
-               
               </form>
             </CardContent>
           </Card>
