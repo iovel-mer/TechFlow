@@ -7,7 +7,7 @@ import Link from "next/link"
 export const Trading: React.FC = () => {
   const t = useTranslations("Trading")
   return (
-    <section className=" py-50 bg-black text-white relative overflow-hidden">
+    <section className=" py-50 bg-black text-white border border-gray-300 relative overflow-hidden">
       {/* Subtle background pattern for depth */}
       <div
         className="absolute inset-0 z-0 opacity-10"
@@ -88,7 +88,7 @@ export const Trading: React.FC = () => {
 
         {/* CTA */}
         <div className="text-center animate-scale-in delay-300">
-          <Link href="/login" passHref>
+          <Link href="/register" passHref>
             <button className="group relative px-10 py-4 md:px-12 md:py-5 bg-white text-black font-extrabold text-lg rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl uppercase tracking-wider overflow-hidden">
               <span className="relative z-10 flex items-center justify-center">
                 {t("cta")}

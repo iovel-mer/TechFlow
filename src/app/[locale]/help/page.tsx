@@ -37,7 +37,7 @@ export default function HelpPage() {
   return (
     <>
     <Header/>
-      <main className='bg-black container  mx-auto px-4  text-white py-16'>
+      <main className='bg-black min-h-screen container  mx-auto px-4  text-white pt-30'>
          
            <Link
   href={`/${locale}`}

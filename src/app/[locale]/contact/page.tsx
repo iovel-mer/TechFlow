@@ -56,7 +56,7 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!isFormValid) return; // Extra safety
-    setSuccessMessage('✨ Your message has been sent successfully!');
+    
     setTimeout(() => {
       router.push('/');
     }, 2000);
@@ -65,7 +65,7 @@ export default function ContactPage() {
   return (
     <>
       <Header />
-      <div className='container mx-auto pt-20  bg-black text-white'>
+      <div className='container mx-auto p-20  bg-black text-white'>
         <div className='mb-20 text-left ml-10'>
           <Link
             href={`/${locale}`}
@@ -204,11 +204,7 @@ export default function ContactPage() {
                 >
                   {t('form.sendButton')}
                 </Button>
-                {successMessage && (
-                  <div className='text-emerald-400 text-base text-center mt-6 p-4 bg-emerald-500/10 rounded-xl border border-emerald-500/20 backdrop-blur-sm'>
-                    {successMessage}
-                  </div>
-                )}
+               
               </form>
             </CardContent>
           </Card>

@@ -97,7 +97,7 @@ export const Market: React.FC = () => {
   }
 
   return (
-    <section className="py-16 md:py-24 bg-black text-white min-h-screen relative overflow-hidden">
+    <section className="p-40 bg-black text-white  relative overflow-hidden">
       {/* Subtle background pattern for depth */}
       <div
         className="absolute inset-0 z-0 opacity-10"

@@ -22,7 +22,7 @@ export default function CookiePage() {
   return (
     <>
   <Header/>
-      <div className="min-h-screen bg-black text-white  py-12">
+      <div className="min-h-screen bg-black text-white  p-12">
          <div className='max-w-7xl mx-auto'>
         <Link
           href={`/${locale}`}
