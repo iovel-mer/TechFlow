@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
 
   return (
     <header className="bg-black sticky top-0 z-50 border-b border-gray-400 ">
-      <div className="container mx-auto px-6 py-4">
+      <div className=" mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo and Brand */}
             <Link href={'/'}>
