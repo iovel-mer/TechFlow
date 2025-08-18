@@ -107,6 +107,30 @@ export default function RegisterPage() {
     e.preventDefault()
     setIsLoading(true)
     setError("")
+
+ if (formData.dateOfBirth) {
+    const birthDate = parseISO(formData.dateOfBirth)
+    const today = new Date()
+    let age = today.getFullYear() - birthDate.getFullYear()
+    const m = today.getMonth() - birthDate.getMonth()
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age-- // not had birthday yet this year
+    }
+
+    if (age < 18) {
+      setError("You must be at least 18 years old to register.")
+      setIsLoading(false)
+      return
+    }
+  } else {
+    setError("Please select your date of birth.")
+    setIsLoading(false)
+    return
+  }
+
+
+
+    
     const response = await postRegistration(formData)
     if (response?.errors) {
       setError(response.message ?? "An unknown error occurred")
