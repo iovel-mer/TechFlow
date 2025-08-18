@@ -63,7 +63,7 @@ export default function ContactPage() {
   return (
     <>
       <Header />
-      <div className="bg-black text-white min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div className="bg-black text-white pt-25 min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         {/* Back to Home */}
         <div className="mb-10 sm:mb-12">
           <Link

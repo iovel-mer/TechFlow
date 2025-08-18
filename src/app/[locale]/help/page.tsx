@@ -18,7 +18,7 @@ export default function HelpPage() {
   return (
     <>
       <Header />
-      <main className="bg-black min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-white">
+      <main className="bg-black min-h-screen pt-25 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-white">
         {/* Back to Home */}
         <Link
           href={`/${locale}`}
