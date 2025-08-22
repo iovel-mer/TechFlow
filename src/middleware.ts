@@ -21,7 +21,6 @@ const isJWTExpiredSync = (token: string): boolean => {
   return Date.now() >= payload.exp * 1000;
 };
 
-// ✅ Correct Intl Middleware Setup
 const intlMiddleware = createIntlMiddleware({
   locales: ['en', 'es', 'de'],
   defaultLocale: 'en',
@@ -31,15 +30,22 @@ const intlMiddleware = createIntlMiddleware({
 export async function middleware(request: NextRequest) {
   console.log('Middleware called for:', request.nextUrl.pathname);
 
-  // ✅ Let next-intl middleware handle locale first
-  const intlResponse = intlMiddleware(request);
-  if (intlResponse) return intlResponse;
-
   const url = new URL(request.url);
   const pathname = url.pathname;
-  const locale = request.nextUrl.locale ?? 'en'; // ✅ Correctly get locale from request
 
-  const pathnameWithoutLocale = pathname.replace(/^\/(en|es|de)/, '') || '/';
+  const intlResponse = intlMiddleware(request);
+
+  if (intlResponse && intlResponse.status >= 300 && intlResponse.status < 400) {
+    console.log('Middleware - Intl redirect:', intlResponse.status);
+    return intlResponse;
+  }
+
+  const segments = pathname.split('/');
+  const locales = ['en', 'es', 'de'];
+  const locale = locales.includes(segments[1]) ? segments[1] : 'en';
+  const pathnameWithoutLocale = locales.includes(segments[1])
+    ? '/' + segments.slice(2).join('/')
+    : pathname;
 
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set('x-url', request.url);
@@ -47,7 +53,7 @@ export async function middleware(request: NextRequest) {
   requestHeaders.set('x-pathname', pathname);
   requestHeaders.set('x-locale', locale);
 
-  const publicPaths = ['/login', '/register', '/'];
+  const publicPaths = ['/login', '/register', '/', '/confirm-auth'];
   const protectedPaths = ['/dashboard', '/trading', '/finance'];
   const authPaths = ['/login', '/register'];
 
@@ -57,6 +63,16 @@ export async function middleware(request: NextRequest) {
   const isAuthPath = authPaths.some(path =>
     pathnameWithoutLocale.startsWith(path)
   );
+  const isConfirmAuthPath = pathnameWithoutLocale === '/confirm-auth';
+
+  // Allow access to confirm-auth page
+  if (isConfirmAuthPath) {
+    return NextResponse.next({
+      request: {
+        headers: requestHeaders,
+      },
+    });
+  }
 
   const authkey = url.searchParams.get('authkey');
   if (authkey && pathnameWithoutLocale === '/dashboard') {
@@ -122,8 +138,8 @@ export async function middleware(request: NextRequest) {
   }
 
   const { token, refreshToken } = sessionData;
-  const needsRefresh = isJWTExpiredSync(token);
 
+  const needsRefresh = isJWTExpiredSync(token);
   if (needsRefresh) {
     console.log('\x1b[44m\x1b[97m[TOKEN EXPIRED]\x1b[0m Trying refresh...');
     if (!refreshToken) {
@@ -211,11 +227,11 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Match all pathnames except for:
-    // - /api
-    // - /_next
-    // - /_vercel
-    // - static files (like .ico, .png, etc)
+    // Match all pathnames except for
+    // - … if they start with `/api`, `/_next` or `/_vercel`
+    // - … the ones containing a dot (e.g. `favicon.ico`)
     '/((?!api|_next|_vercel|.*\\..*).*)',
   ],
 };
+
+

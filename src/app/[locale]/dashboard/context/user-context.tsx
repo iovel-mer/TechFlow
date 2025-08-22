@@ -86,7 +86,9 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
         return;
       }
 
-      const webTraderUrl = `https://webtrader.salesvault.dev/trading-view?ctx=${token}`;
+      const currentDomain = process.env.NEXT_PUBLIC_BASE_WEBTRADER_URL;
+
+      const webTraderUrl = `https://${currentDomain}/trading-view?ctx=${token}`;
 
       let success = false;
 
